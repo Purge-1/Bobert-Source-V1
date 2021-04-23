@@ -900,5 +900,21 @@ async def akinator(ctx):
             await ctx.send(embed=bye)
         except Exception as e:
             await ctx.send(e)
+            
+            
+rps = [
+'🪨',
+'📰',
+'✂️'
+]
+
+
+@client.command()
+async def rps(ctx):
+    embed = discord.Embed(title="Rock Paper and Sissors!", description="Yeah, thats it.")
+    embed.add_field('You got'(rps))
+    embed.add_field('I got'(rps))
+    embed.add_field('I am'(Bot_name))
+await ctx.author.send(embed=embed)
 
 client.run(token)
