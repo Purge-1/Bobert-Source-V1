@@ -917,4 +917,12 @@ async def rps(ctx):
     embed.add_field('I am'(Bot_name))
 await ctx.author.send(embed=embed)
 
+
+@client.command()
+async def ping(ctx):
+
+    embed = discord.Embed(
+        title="Ping", description=f"{round(client.latency * 1000)}")
+    await ctx.send(embed=embed)
+
 client.run(token)
