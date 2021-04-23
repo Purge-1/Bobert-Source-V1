@@ -1,2 +1,3 @@
 Added an akinator command.
 Added a rock, paper, and sissors command.
+Added a ping command
